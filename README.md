@@ -1,4 +1,4 @@
 # Rat Clicker
- Jogo idle com tema de ratos e queijos.
+Jogo idle com tema de ratos e queijos.
 
  Projeto criado para praticar meus conhecimentos do início dos estudos.
