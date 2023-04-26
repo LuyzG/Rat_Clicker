@@ -5,21 +5,25 @@ let cheeseAmount = 0
 const cheeseAmountDiv = document.getElementById('cheeseAmount')
 let cheesePerSecond = 0
 let cheesePerClick = 1
+
 // pata de rato
 const pawOfRatButton = document.getElementById('pawOfRatButton')
 let pawOfRatAmount = 0
 const pawOfRatPriceSpan = document.getElementById('pawOfRatPrice')
 let pawOfRatPrice = 10
+
 // rato
 const ratButton = document.getElementById('ratButton')
 let ratAmount = 0
 const ratPriceSpan = document.getElementById('ratPrice')
 let ratPrice = 50
+
 // GABIRU
 const gabiruButton = document.getElementById('gabiruButton')
 let gabiruAmount = 0
 const gabiruPriceSpan = document.getElementById('gabiruPrice')
 let gabiruPrice = 1000
+
 /* funções */
 // função pra desabilitar todos os botões
 function disableButtons(){
@@ -33,8 +37,8 @@ function disableButtons(){
         gabiruButton.disabled=true
     }
 }
-
 disableButtons()
+
 // reativar os botões
 function enableButtons(){
     if(cheeseAmount>=ratPrice){
@@ -48,19 +52,14 @@ function enableButtons(){
     }
 }
 enableButtons()
-// comprar coisos
-// function buy(buildingPrice, buildingAmount, increment){
-//     cheeseAmount -= buildingPrice
-//     buildingPrice *= 1.30
-//     buildingAmount += 1
-//     increment += 1
-// }
+
 // clica         CLICA            CLICAAAAA
 cheeseImage.onclick = function() {
     cheeseAmount+=cheesePerClick
     enableButtons()
     cheeseAmountDiv.textContent = `Queijo: ${cheeseAmount.toFixed(1)}`
 }
+
 /* comprar construções */
 // comprar pata de rato
 pawOfRatButton.onclick = function(){
@@ -73,6 +72,7 @@ pawOfRatButton.onclick = function(){
     this.innerHTML = `Patas de rato: ${pawOfRatAmount}`
     pawOfRatPriceSpan.innerHTML = `${pawOfRatPrice.toFixed(1)} queijos`
 }
+
 //comprar rato
 ratButton.onclick = function(){
     cheeseAmount -= ratPrice
@@ -84,6 +84,7 @@ ratButton.onclick = function(){
     this.innerHTML = `Ratos: ${ratAmount}`
     ratPriceSpan.innerHTML = `${ratPrice.toFixed(1)} queijos`
 }
+
 // comprar GABIRU
 gabiruButton.onclick = function(){
     cheeseAmount -= gabiruPrice
@@ -95,6 +96,7 @@ gabiruButton.onclick = function(){
     this.innerHTML = `Gabirus: ${gabiruAmount}`
     gabiruPriceSpan.innerHTML = `${gabiruPrice.toFixed(1)} queijos`
 }
+
 /* queijo por segundo  */
 setInterval(
     function increaseCheesePerSecond(){
@@ -104,7 +106,6 @@ setInterval(
         }    
     }, 1000
 )
-
 function loop (){
     cheeseAmountDiv.textContent = `Queijo: ${cheeseAmount.toFixed(1)}`
     enableButtons()
