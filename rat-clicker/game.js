@@ -2,23 +2,23 @@ const cheeseImage = document.getElementById('cheeseImage')
 /* variaveis (queijo, queijo por segundo, construções, as divs deles) */
 // queijo
 let cheeseAmount = 0
-let cheeseAmountDiv = document.getElementById('cheeseAmount')
+const cheeseAmountDiv = document.getElementById('cheeseAmount')
 let cheesePerSecond = 0
 let cheesePerClick = 1
 // pata de rato
-let pawOfRatButton = document.getElementById('pawOfRatButton')
+const pawOfRatButton = document.getElementById('pawOfRatButton')
 let pawOfRatAmount = 0
-let pawOfRatPriceSpan = document.getElementById('pawOfRatPrice')
+const pawOfRatPriceSpan = document.getElementById('pawOfRatPrice')
 let pawOfRatPrice = 10
 // rato
-let ratButton = document.getElementById('ratButton')
+const ratButton = document.getElementById('ratButton')
 let ratAmount = 0
-let ratPriceSpan = document.getElementById('ratPrice')
+const ratPriceSpan = document.getElementById('ratPrice')
 let ratPrice = 50
 // GABIRU
-let gabiruButton = document.getElementById('gabiruButton')
+const gabiruButton = document.getElementById('gabiruButton')
 let gabiruAmount = 0
-let gabiruPriceSpan = document.getElementById('gabiruPrice')
+const gabiruPriceSpan = document.getElementById('gabiruPrice')
 let gabiruPrice = 1000
 /* funções */
 // função pra desabilitar todos os botões
