@@ -3,26 +3,26 @@ const cheeseImage = document.getElementById('cheeseImage')
 /* variaveis (queijo, queijo por segundo, construções, as divs deles) */
 // queijo
 let cheeseAmount = 0
-const cheeseAmountDiv = document.getElementById('cheeseAmount')
+let cheeseAmountDiv = document.getElementById('cheeseAmount')
 let cheesePerSecond = 0
 let cheesePerClick = 1
 
 // pata de rato
-const pawOfRatButton = document.getElementById('pawOfRatButton')
+let pawOfRatButton = document.getElementById('pawOfRatButton')
 let pawOfRatAmount = 0
-const pawOfRatPriceSpan = document.getElementById('pawOfRatPrice')
+let pawOfRatPriceSpan = document.getElementById('pawOfRatPrice')
 let pawOfRatPrice = 10
 
 // rato
-const ratButton = document.getElementById('ratButton')
+let ratButton = document.getElementById('ratButton')
 let ratAmount = 0
-const ratPriceSpan = document.getElementById('ratPrice')
+let ratPriceSpan = document.getElementById('ratPrice')
 let ratPrice = 50
 
 // GABIRU
-const gabiruButton = document.getElementById('gabiruButton')
+let gabiruButton = document.getElementById('gabiruButton')
 let gabiruAmount = 0
-const gabiruPriceSpan = document.getElementById('gabiruPrice')
+let gabiruPriceSpan = document.getElementById('gabiruPrice')
 let gabiruPrice = 1000
 
 /* funções */
