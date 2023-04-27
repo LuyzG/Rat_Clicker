@@ -1,4 +1,5 @@
 const cheeseImage = document.getElementById('cheeseImage')
+
 /* variaveis (queijo, queijo por segundo, construções, as divs deles) */
 // queijo
 let cheeseAmount = 0
