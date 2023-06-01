@@ -5,6 +5,7 @@
 body{
   background-color: #1e1e1e;
   display: flex;
+  flex-wrap: wrap;
 }
 div, span {
   color: white;
